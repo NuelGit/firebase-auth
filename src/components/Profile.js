@@ -5,16 +5,7 @@ import './Profile.css'
 
 const Profile = () => {
     const { user, userProfile} = UserAuth()
-    // const navigate = useNavigate()
-
-    // const handleLogout = async() =>{
-    //     try {
-    //        await logout() 
-    //        navigate('/')
-    //     } catch (error) {
-    //         console.log(error.message)
-    //     }
-    // }
+    
   return (
     <> 
     <div>User's Profile</div>
@@ -33,3 +24,14 @@ const Profile = () => {
 }
 
 export default Profile
+
+// const navigate = useNavigate()
+
+    // const handleLogout = async() =>{
+    //     try {
+    //        await logout() 
+    //        navigate('/')
+    //     } catch (error) {
+    //         console.log(error.message)
+    //     }
+    // }
