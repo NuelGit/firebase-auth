@@ -3,6 +3,7 @@ import {Link, useNavigate} from 'react-router-dom'
 import {getAuth, createUserWithEmailAndPassword} from 'firebase/auth'
 import {doc, setDoc} from 'firebase/firestore'
 import {db} from '../firebase.config'
+import './CreateUser.css'
 
 
 const CreateUser = () => {
@@ -59,34 +60,36 @@ const CreateUser = () => {
       };
   
     return (
-    <div>
+    <div className='container'>
       <h1> Create User Account</h1>
     {error && <p style={{ color: 'red'}}> {error}</p>}
 
-    <div >
+    <div className='form-group'>
+
       <label>UserName: </label>
       <input type='text' placeholder='Your Full-name' value={fullName} onChange={handleFullNameChange}/>
     </div>
 
-    <div >
+    <div className='form-group'>
+
       <label>Phone Number: </label>
       <input type='mobile' placeholder='Phone Number' value={phoneNumber} onChange={handlePhoneNumberChange}/>
     </div>
   
-    <div >
+    <div className='form-group'>
       <label>Email: </label>
       <input type='text' placeholder='Your Email Address' value={email} onChange={handleEmailChange}/>
     </div>
     
   
-    <div>
+    <div className='form-group'>
   
       <label>Password: </label>
       <input type='password' placeholder='Password' value={password} onChange={handlePasswordChange} />
       
     </div>
 
-    <div>
+    <div className='form-group'>
   
       <label>Confirm Password: </label>
       <input type='password' placeholder='Confirm Password' value={confirmPassword} onChange={handleConfrimPasswordChange} />

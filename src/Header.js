@@ -1,0 +1,50 @@
+import React from 'react'
+import {Link, useNavigate} from 'react-router-dom'
+import {UserAuth}  from './context/UserContext'
+import './Header.js'
+
+const Header = () => {
+    const {user, logout, userProfile} = UserAuth()
+    const navigate = useNavigate()
+
+    const handleLogout = async() =>{
+        try {
+           await logout() 
+           navigate('/')
+        } catch (error) {
+            console.log(error.message)
+        }
+    }
+
+  return (
+
+    <header className='header'>
+    <nav>
+      <ul>
+       
+        {!user ? (
+          <>
+            <li><Link to="/create-user">Create Account</Link></li>
+            <li><Link to="/">Login</Link></li>
+          </>
+        ) : (
+          <>
+             <li><Link to="/home">Home</Link></li>
+            {/* <li><Link to="/profile">Profile</Link></li> */}
+            <li><Link to="/uploads">File Upload</Link></li>
+           
+            <li> Welcome! { user.email} </li>
+            <li>  {userProfile && userProfile.fullname}</li>
+            <li>
+            <button onClick={handleLogout}> Log-Out</button>
+            </li>
+          </>
+        )}
+      </ul>
+    </nav>
+  </header>
+);
+
+}
+
+export default Header

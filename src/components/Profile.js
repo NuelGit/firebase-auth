@@ -1,19 +1,20 @@
 import React from 'react'
-import {useNavigate} from 'react-router-dom'
+// import {useNavigate} from 'react-router-dom'
 import {UserAuth} from '../context/UserContext'
+import './Profile.css'
 
 const Profile = () => {
-    const {logout, user, userProfile} = UserAuth()
-    const navigate = useNavigate()
+    const { user, userProfile} = UserAuth()
+    // const navigate = useNavigate()
 
-    const handleLogout = async() =>{
-        try {
-           await logout() 
-           navigate('/')
-        } catch (error) {
-            console.log(error.message)
-        }
-    }
+    // const handleLogout = async() =>{
+    //     try {
+    //        await logout() 
+    //        navigate('/')
+    //     } catch (error) {
+    //         console.log(error.message)
+    //     }
+    // }
   return (
     <> 
     <div>User's Profile</div>
@@ -25,7 +26,7 @@ const Profile = () => {
     </div>
 
     <div>
-        <button onClick={handleLogout}> Log-Out</button>
+        {/* <button onClick={handleLogout}> Log-Out</button> */}
     </div>
   </>
   )

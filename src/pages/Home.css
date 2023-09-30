@@ -1,0 +1,15 @@
+.home-container {
+    text-align: center;
+    padding: 2rem;
+  }
+  
+  h1 {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    color: rgb(49, 3, 3);
+  }
+  
+  p {
+    font-size: 2rem;
+    color:black;
+  }

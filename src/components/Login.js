@@ -1,6 +1,7 @@
 import React, {useState} from 'react'
 import {useNavigate} from 'react-router-dom'
 import {UserAuth} from '../context/UserContext'
+import './Login.css'
 
 const Login = () => {
     const [email, setEmail] = useState('')
@@ -35,6 +36,7 @@ const Login = () => {
   
     return (
     <div className='login-container'>
+        
       <h1> User Login</h1>
       {error && <p className="error-message">{error}</p>}
   
