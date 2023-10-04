@@ -9,6 +9,7 @@ li {
   margin: 0;
   padding: 0;
   list-style: none;
+  font-size: small;
 }
 
 body {
@@ -16,6 +17,7 @@ body {
   background-color: #f0f0f0;
   color: #3f3b3b;
 }
+
 
 .container {
   max-width: 80%;
@@ -68,10 +70,11 @@ body {
   margin-bottom: 10px;
   border: 1px solid #ccc;
   border-radius: 3px;
+  align-items: center;
 }
 
 .form button {
-  background-color: #007bff;
+  background-color: #33fc0b;
   color: #fff;
   padding: 10px 20px;
   border: none;

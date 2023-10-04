@@ -36,21 +36,21 @@ const Login = () => {
   
     return (
     <div className='login-container'>
-        
-      <h1> User Login</h1>
+
+      <h1> Secure files Login Page</h1>
       {error && <p className="error-message">{error}</p>}
   
     <div className='form-group'>
-      <label>Email: </label>
+      <label> Email: </label>
       <input type='text' placeholder='Your Email Address' value={email} onChange={handleEmailChange}/>
     </div>
   
     <div className='form-group'>
-      <label>Password: </label>
+      <label> Password: </label>
       <input type='password' placeholder='Password' value={password} onChange={handlePasswordChange} />
     </div>
 
-  <div className='btn'> 
+  <div className='button'> 
     <button onClick={handleLogin}> Login </button>
   </div>
 

@@ -13,7 +13,7 @@ const Profile = () => {
 
     <div>
         <p> User Full-Name: { userProfile && userProfile.fullname}</p>
-        <p> User Full-Name: { userProfile && userProfile.phone}</p>
+        <p> User phone-Number: { userProfile && userProfile.phone}</p>
     </div>
 
     <div>

@@ -23,14 +23,15 @@ const Header = () => {
       <ul>
        
         {!user ? (
+            
           <>
-            <li><Link to="/create-user">Create Account</Link></li>
-            <li><Link to="/">Login</Link></li>
+            <li><Link to="/">Home Page</Link></li>
+            {/* <li><Link to="/">Login</Link></li> */}
           </>
         ) : (
           <>
-             <li><Link to="/home">Home</Link></li>
-            {/* <li><Link to="/profile">Profile</Link></li> */}
+             {/* <li><Link to="/profile">Profile</Link></li> */}
+            <li><Link to="/profile">Profile</Link></li>
             <li><Link to="/uploads">File Upload</Link></li>
            
             <li> Welcome! { user.email} </li>

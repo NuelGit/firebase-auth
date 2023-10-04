@@ -2,17 +2,18 @@
     max-width: 40%;
     margin: 0 auto;
     padding: 20px;
-    background-color: #fff;
+    background-color: #f9f7f7;
     border-radius: 5px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
   }
   
   h1 {
     text-align: center;
-    font-size: 1rem;
-    margin-bottom: 20px;
+    font-size: large;
+    margin-bottom: 10px;
   }
-  
+  /* Apply a common style to headings */
+
   .error-message {
     color: #ff0000;
     margin-bottom: 10px;
@@ -39,10 +40,11 @@
   
   .btn {
     text-align: center;
+    color: #000;
   }
   
   button {
-    background-color: #007bff;
+    background-color: #17f835;
     color: #fff;
     padding: 10px 20px;
     border: none;
@@ -52,5 +54,5 @@
   }
   
   button:hover {
-    background-color: #0056b3;
+    background-color: #373839;
   }
