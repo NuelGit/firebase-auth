@@ -64,7 +64,7 @@ const EncryptFile = () => {
         <button onClick={handleEncryptFile}>Encrypt File</button>
         <div>
           <h3>Encrypted File:</h3>
-          <textarea readOnly rows="5" value={encryptedFile}></textarea>
+          <textarea readOnly rows="8"  value={encryptedFile}></textarea>
         </div>
       </div>
     );

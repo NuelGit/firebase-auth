@@ -8,6 +8,7 @@ import NotFound from './pages/NotFound';
 import {AuthContextProvider} from './context/UserContext'
 import GenerateRanDEK from './components/GenerateDEK';
 import EncryptFile from './components/EncryptFile';
+import GeneratePublicKey from './components/GeneratePublicKey'
 import Home from './pages/Home';
 import Header from './Header';
 function App() {
@@ -21,6 +22,7 @@ function App() {
         <Route path='/' element={<Home/>} />
         <Route path='/dek' element={<GenerateRanDEK/>} />
         <Route path='/encrypt' element={<EncryptFile/>} />
+        <Route path='/pubkey' element={<GeneratePublicKey/>} />
         <Route path='/create-user' element ={<CreateUser/>} />
 
         <Route path='/profile' element ={<ProtectedRoute><Profile/> </ProtectedRoute>} />
